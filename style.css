@@ -17,6 +17,11 @@ h4 {
     font-size: 16px;
 }
 
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 /* Fonts Ends*/
 
 /* Body and Container Starts*/
@@ -62,7 +67,10 @@ p {
 .notice-board img {
     width: 581px;
     height: 613px;
+}
 
+.image {
+    display: flex;
 }
 
 /* Notice Board Ends */
@@ -71,25 +79,57 @@ p {
 .tab-blog {
     margin-top: 130px;
     display: flex;
+    justify-content: space-between;
+}
+
+/* Nav Bar */
+.nav-bar {
+    height: 280px;
+    width: 280px;
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 
-.nav-bar {
-    height: 312px;
-    width: 312px;
-    background-color: #161616;
+.nav-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 252px;
+    height: 64px;
     border-radius: 10px;
+    background-color: white;
 }
 
+#nav-box-selected {
+    background-color: #DD0000;
+}
+
+#nav-box-selected h2 {
+    color: white;
+}
+
+
+.nav-box h2 {
+    color: #161616;
+}
+
+
+
+/* Blogs */
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 24px;
+    grid-gap: 15px;
 
 }
 
 .blog {
-    width: 312px;
+    width: 310px;
     border: 1px solid #E8E8E8;
     border-radius: 10px;
 
@@ -100,7 +140,7 @@ p {
 }
 
 .tab-blog p {
-    color: black;
+    color: #161616;
 }
 
 .transfer {
@@ -122,6 +162,7 @@ p {
 .stats-icons {
     display: flex;
     align-items: center;
+    color: #161616;
 }
 
 .fa-message {
@@ -132,12 +173,38 @@ p {
 footer {
     width: 100vw;
     background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+footer hr {
+    border: 1px solid #ffffff10;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
 }
 
 footer h1 {
     font-size: 40px;
     color: white;
     font-weight: 600;
+}
+
+footer h4 {
+    color: white;
+    font-weight: 400;
 }
 
 /* Buttons */
