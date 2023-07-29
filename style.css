@@ -3,6 +3,7 @@
 
 h1 {
     font-size: 70px;
+    line-height: 1em;
 }
 
 h2 {
@@ -42,18 +43,20 @@ body {
 
 /* Notice Board Starts */
 .notice-board {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #161616;
+
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    padding: 0 80px;
+    background-color: #161616;
     border-radius: 30px;
+    height: 646px;
 
 }
 
 .text {
-    padding-left: 100px;
+    padding-left: 0;
 }
 
 .notice-board h1,
@@ -66,11 +69,14 @@ p {
 
 .notice-board img {
     width: 581px;
-    height: 613px;
+
 }
 
 .image {
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
 }
 
 /* Notice Board Ends */
