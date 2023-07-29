@@ -175,6 +175,49 @@ p {
     margin-left: 5px;
 }
 
+/* Upcoming Matches */
+.upcoming-matches {
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.upcoming-match {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 240px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.matchs-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.match-info p {
+    margin: 0;
+    padding: 0;
+}
+
+.match-info h3 {
+    margin: 20 0 0;
+    padding: 0;
+}
+
+.vs {
+    display: flex;
+    align-items: center;
+}
+
+.vs h4 {
+    margin: 0 20px;
+}
+
 /* Footer */
 footer {
     width: 100vw;
