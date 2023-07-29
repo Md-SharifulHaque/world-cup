@@ -314,7 +314,150 @@ footer h4 {
         border: 1px solid #E8E8E8;
         width: 230px;
     }
+
+    /* Blog */
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+
+    }
+
+    .blog {
+        width: 357px;
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    /* Matches */
+    .upcoming-matches {
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .upcoming-match {
+        width: 357px;
+        height: 240px;
+    }
+
+    /* Footer */
+
+    .footer-info {
+        padding: 70px 0;
+    }
+
+    footer hr {
+        border: 1px solid #ffffff10;
+    }
+
+    .contact {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+
+    footer h1 {
+        font-size: 40px;
+        color: white;
+        font-weight: 600;
+    }
+
+    footer h4 {
+        color: white;
+        font-weight: 400;
+    }
+
 }
 
 /* Phone CSS */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 334px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    /* Notice Board */
+    .notice-board {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 28px 30px 0;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .notice-board img {
+        width: 233px;
+        margin-top: 21px;
+    }
+
+
+
+    /* Navigation Bar */
+    .tab-blog {
+        margin-top: 16px;
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        background-color: white;
+        padding: 16px 0;
+
+    }
+
+    .nav-box {
+        border: 1px solid #E8E8E8;
+        margin: 8px;
+        width: 230px;
+    }
+
+    /* Blog */
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+
+    }
+
+    .blog {
+        width: 335px;
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+    /* Matches */
+    .upcoming-matches {
+        grid-gap: 16px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .upcoming-match {
+        width: 335px;
+        height: 240px;
+    }
+
+    /* Footer */
+
+    .footer-info {
+        padding: 25px 0;
+    }
+
+    .contact {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
